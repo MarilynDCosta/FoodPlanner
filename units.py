@@ -16,6 +16,9 @@ class Unit:
             return self.amount - unit.amount
         else:
             print("Invalid operator")
+
+    def __str__(self):
+        return f"{self.name}: {self.amount} {self.units}"
     
 
 if __name__ == "__main__":
