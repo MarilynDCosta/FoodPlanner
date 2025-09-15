@@ -1,6 +1,7 @@
 
 from units import Unit
+from recipe import Recipe
 
-u1 = Unit("beans", 400, "grams")
-u2 = Unit("beans", 50, "grams")
-print(u1 - u2)
+ingredients = [["beans", float(200), "grams"], ["milk", float(1), "litres"]]
+recipe = Recipe(ingredients)
+print(recipe.make_units())

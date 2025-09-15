@@ -5,20 +5,20 @@ class Unit:
         self.amount = amount
         self.units = units
 
-    def __add__(self, unit):
-        if unit.units == self.units and unit.name == self.name:
-            return self.amount + unit.amount
+    def __add__(self, unitA):
+        if unitA.units == self.units and unitA.name == self.name:
+            return self.amount + unitA.amount
         else:
             print("Invalid operator")
     
-    def __sub__(self, unit):
-        if unit.units == self.units and unit.name == self.name:
-            return self.amount - unit.amount
+    def __sub__(self, unitA):
+        if unitA.units == self.units and unitA.name == self.name:
+            return self.amount - unitA.amount
         else:
             print("Invalid operator")
 
     def __str__(self):
-        return f"{self.name}: {self.amount} {self.units}"
+        return f"{self.name}: {self.amount}{self.units}"
     
 
 if __name__ == "__main__":
