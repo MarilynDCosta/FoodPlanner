@@ -22,9 +22,13 @@ class Inventory:
         for item in self.storage:
             print(item)
 
+    def get_item_names(self):
+        return {item.name for item in self.storage}
+
 if __name__ == "__main__":
     i = Inventory()
-    i.print_storage()
+    # i.print_storage()
+    print(i.get_item_names())
 
 
 
